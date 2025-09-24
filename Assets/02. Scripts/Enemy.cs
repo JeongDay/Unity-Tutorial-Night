@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public interface IDamageable
-{
-    void TakeDamage(int damage);
-}
+// public interface IDamageable
+// {
+//     void TakeDamage(int damage);
+// }
 
 // public class Player : MonoBehaviour
 // {
@@ -15,7 +15,7 @@ public interface IDamageable
 //     }
 // }
 
-public class Enemy : MonoBehaviour, IDamageable
+public class Enemy : MonoBehaviour // , IDamageable
 {
     public int health = 100;
 

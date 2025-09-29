@@ -9,6 +9,8 @@ namespace DesignPatterns.Observer
     public class ButtonSubject: MonoBehaviour
     {
         public event Action Clicked;
+        
+        public List<IObserver> observers = new List<IObserver>();
 
         private Collider m_Collider;
 
@@ -21,7 +23,7 @@ namespace DesignPatterns.Observer
         {
             Clicked?.Invoke();
         }
-
+        
         void Update()
         {
             CheckCollider();
